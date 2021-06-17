@@ -29,7 +29,6 @@
 package org.omegat.plugins.machinetranslators;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang.StringEscapeUtils;
 
 import org.omegat.util.Language;
