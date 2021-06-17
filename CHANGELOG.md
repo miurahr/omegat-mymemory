@@ -3,12 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-### Add
-- foo
-- boo
+- Import from OmegaT 5.5.0
+- Utilize Jackson for JSON parser.
 
-### Changed
-
-### Fixed
-
-[Unreleased]: https://github.com/miurahr/omegat-plugin-skelton/compare/v0.1...HEAD
+[Unreleased]: https://github.com/miurahr/omegat-mymemory/compare/v0.1...HEAD

@@ -4,9 +4,19 @@ plugins {
     distribution
     maven
     id("org.omegat.gradle") version "1.5.3"
+    id("com.palantir.git-version") version "0.12.3"
 }
 
-version = "0.0.1"
+// calculate version string from git tag, hash and commit distance
+fun getVersionDetails(): com.palantir.gradle.gitversion.VersionDetails = (extra["versionDetails"] as groovy.lang.Closure<*>)(
+) as com.palantir.gradle.gitversion.VersionDetails
+if (getVersionDetails().isCleanTag) {
+    version = getVersionDetails().lastTag.substring(1)
+} else {
+    version = getVersionDetails().lastTag.substring(1) + "-" + getVersionDetails().commitDistance + "-" + getVersionDetails()
+.gitHash + "-SNAPSHOT"
+}
+
 repositories {
     mavenLocal()
 }

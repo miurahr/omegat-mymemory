@@ -1,4 +1,4 @@
-# DeepL Machine Translator plugin for OmegaT 
+# MyMemory Machine Translator plugin for OmegaT 
 
 ## License
 
