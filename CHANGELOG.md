@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-## v0.1.0
+## v0.1.1
 
 - Import MyMemory MT module from OmegaT 5.5.0
 - Utilize Jackson for JSON parser.
